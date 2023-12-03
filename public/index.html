@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/material.css">
+    <title>Code Connect</title>
+</head>
+<body>
+    <h1>Code Connect</h1>
+
+    <textarea id="editor"></textarea>
+
+    <script>
+        // Configuración de CodeMirror
+        var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+            lineNumbers: true, // Mostrar números de línea  
+            mode: "javascript", // Establecer el modo de lenguaje (puedes cambiarlo)
+            theme: "material", // Establecer el tema
+        });
+    </script>
+
+</body>
+</html>
